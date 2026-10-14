@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Keep the page readable and centered on small and large screens. */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #eef3f8;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      width: min(100%, 560px);
+      padding: 36px;
+      background: #ffffff;
+      border: 1px solid #d9e2ec;
+      border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(31, 41, 55, 0.08);
+    }
+    h1 { margin: 0 0 14px; color: #174a6e; }
+    p { line-height: 1.7; }
+    button {
+      margin-top: 12px;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: 6px;
+      background: #176b87;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background: #10566d; }
+    button:focus-visible { outline: 3px solid #f0a202; outline-offset: 3px; }
+    @media (max-width: 480px) { .card { padding: 26px; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>A Little About Me</h1>
+    <!-- Replace this sample paragraph with your own interests and choices. -->
+    <p>I enjoy reading about technology, web development, and creative problem-solving. I am currently interested in learning Java, exploring new ideas, and building useful projects.</p>
+    <!-- The button opens the form in the next page of the flow. -->
+    <button type="button" onclick="window.location.href='test.html'">Test</button>
+  </main>
+</body>
+</html>
